@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityLab">
+
+    <TextView
+        android:id="@+id/tvRestartCounter"
+        android:layout_width="36dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/tvRestart"
+        app:layout_constraintTop_toBottomOf="@+id/tvResumeCounter" />
+
+    <TextView
+        android:id="@+id/tvResumeCounter"
+        android:layout_width="36dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/tvResume"
+        app:layout_constraintTop_toBottomOf="@+id/tvStartCounter" />
+
+    <TextView
+        android:id="@+id/tvCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onCreate() calls:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="onStart() calls:"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreate"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tvRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="onRestart() calls:"
+        app:layout_constraintTop_toBottomOf="@+id/tvResume"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tvResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="onResume() calls:"
+        app:layout_constraintTop_toBottomOf="@+id/tvStart"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tvCreateCounter"
+        android:layout_width="36dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/tvCreate"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:id="@+id/tvStartCounter"
+        android:layout_width="36dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/tvStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreateCounter" />
+
+    <Button
+        android:id="@+id/btnLaunchActivityTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Start Activity Two"
+        app:layout_constraintTop_toBottomOf="@+id/tvRestart"
+        tools:layout_editor_absoluteX="34dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
